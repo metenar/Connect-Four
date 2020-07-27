@@ -83,6 +83,7 @@ function endGame(msg) {
   setTimeout(()=>{
     alert(msg);
   },1200);
+  
   // TODO: pop up alert message
 }
 
