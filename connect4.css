@@ -1,0 +1,88 @@
+body{
+  background-color: rgb(129, 210, 221);
+}
+h1 {
+  max-width: 270px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color:navy;
+}
+#button {
+  background-color: orangered;
+  color:white;
+  font-weight: bold;
+  font-size: 1.3em;
+  position: absolute;
+  width: 30%;
+  bottom: 20px;
+  left:35%;
+  border-radius: 10px;
+  border-color: orangered;
+}
+/* game board table */
+#container{
+  background-color: royalblue;
+  max-width: 450px;
+  height: 500px;
+  margin:auto;
+  border-radius: 10%;
+  position: relative;
+}
+#game {
+position: absolute;
+margin: 10px;
+padding-top: 30px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#board td {
+  width: 50px;
+  height: 40px;
+  border: solid 6px #666;
+  background-color: seashell;
+  border-radius: 40%;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+  
+}
+@keyframes example {
+  from {top:-280px;}
+  to {top:0px;}
+}
+.player1{
+  background-color: blue;
+  
+}
+.player2{
+  background-color: red;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 3px rgb(138, 134, 134);
+  background-color: silver;
+  
+
+  
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
