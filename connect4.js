@@ -80,7 +80,9 @@ function placeInTable(y, x) {
 /** endGame: announce game end */
 
 function endGame(msg) {
-  alert(msg);
+  setTimeout(()=>{
+    alert(msg);
+  },1200);
   // TODO: pop up alert message
 }
 
@@ -103,6 +105,8 @@ function handleClick(evt) {
 
   // check for win
   if (checkForWin()) {
+    setTimeout(function(){
+    },1000);
     return endGame(`Congrats!! Player ${currPlayer} won!`);
   }
 const btn=document.getElementById('button');
